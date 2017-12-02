@@ -7,7 +7,7 @@ A command-line program that performs plagiarism detection using a N-tuple compar
 * Compile with: clang++ -std=c++11 detectorMain.cpp detector.cpp -g -o main.exe –Wall
 * Run with: ./main.exe sysn_file_name file1_name file2_name N-size
 
-# Assumption:
+# Assumptions:
 
 *	Periods, commas etc. are touching 
 *	There is a space after each synonym (including the last in each line)
