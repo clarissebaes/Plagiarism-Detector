@@ -1,14 +1,14 @@
 # Plagiarism-Detector
-======
+
 A command-line program that performs plagiarism detection using a N-tuple comparison algorithm allowing for synonyms in the text
 
 # Command to compile the code.
-======
+
 * Compile with: clang++ -std=c++11 detectorMain.cpp detector.cpp -g -o main.exe –Wall
 * Run with: ./main.exe sysn_file_name file1_name file2_name N-size
 
 # Assumption:
-======
+
 *	Periods, commas etc. are touching 
 *	There is a space after each synonym (including the last in each line)
 *	Capitalization has no effect
@@ -16,7 +16,7 @@ A command-line program that performs plagiarism detection using a N-tuple compar
 *	Tuple is only considered as matching  if and only if all the words are same (or synonym) in the exact order 
   * "for a run" != "run for a” 
 # Approach:
-======
+
 *	I created a Detector class, that stores all the words from each file, the synonyms as well as the map of the tuples from file 2.
 *	Handle all the I/O in the main code
 *	Outline of Code:
@@ -35,7 +35,7 @@ A command-line program that performs plagiarism detection using a N-tuple compar
  * Output percentage which is calculated by count/total *100
   
 # Limitations:
-======
+
 * Sentence restructuring is not accounted for, since order of tuple is important
 * Active vs passive sentence structure will not be detected
 * There are only a limited number of word delimiters
