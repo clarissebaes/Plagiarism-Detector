@@ -12,9 +12,9 @@ A command-line program that performs plagiarism detection using a N-tuple compar
 *	Periods, commas etc. are touching 
 *	There is a space after each synonym (including the last in each line)
 *	Capitalization has no effect
-  * “HeLLo”= “hello”
+ * “HeLLo”= “hello”
 *	Tuple is only considered as matching  if and only if all the words are same (or synonym) in the exact order 
-  * "for a run" != "run for a” 
+   * "for a run" != "run for a” 
 # Approach:
 
 *	I created a Detector class, that stores all the words from each file, the synonyms as well as the map of the tuples from file 2.
